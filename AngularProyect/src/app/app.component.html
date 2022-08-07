@@ -1,5 +1,12 @@
 
-<button mat-raised-button color="primary" (click)="isactive()">MOSTRAR TABLA</button>
+<app-clicker [bonus]="bonusGlobal" (sumarValor)="sumarAlTotal($event)">asd</app-clicker>
+<app-clicker [bonus]="bonusGlobal" (sumarValor)="sumarAlTotal($event)">asd</app-clicker>
+<app-clicker [bonus]="bonusGlobal" (sumarValor)="sumarAlTotal($event)">asd</app-clicker>
+<p>total: {{total}}</p>
+
+<div>
+  <button mat-raised-button color="primary" (click)="isactive()">MOSTRAR TABLA</button>
+</div>
 
 <div *ngIf="active">
   <p>Productos de supermercado</p>
@@ -14,4 +21,5 @@
     </tr>
   </table>
 </div>
+
 
