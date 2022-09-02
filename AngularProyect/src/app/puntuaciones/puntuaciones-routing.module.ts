@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ClickerComponent } from './components/clicker/clicker.component';
+import { PuntuacionesPageComponent } from './pages/puntuaciones-page/puntuaciones-page.component';
 
 const routes: Routes = [
-  {path: '**', component: ClickerComponent}
+  {path: '**', component: PuntuacionesPageComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ClickerModuleRoutingModule { }
+export class PuntuacionesRoutingModule { }
